@@ -24,6 +24,7 @@ RUN git clone https://github.com/PredatorCode/timeoff-management-application.git
 WORKDIR /app/timeoff-management
 #RUN git checkout tags/1.4.0
 
+RUN npm install --save pg pg-hstore
 RUN npm install
 
 CMD npm start
