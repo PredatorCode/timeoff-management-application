@@ -2,7 +2,7 @@
   "development": {
     "dialect": "sqlite",
     "storage": "./db.development.sqlite",
-    "logging": false 
+    "logging": false
   },
   "test": {
     "username": "root",
@@ -12,10 +12,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "app_timeoff",
+    "password": "3h99v4kjQwrDXNVL",
+    "database": "timeoff",
+    "host": "tib-srv-stuff-pgdb.corp.tiburon-research.ru",
+    "dialect": "postgres"    
   }
 }
