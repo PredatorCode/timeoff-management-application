@@ -4,11 +4,11 @@
     "storage": "./db.development.sqlite",
     "logging": false
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+   "test": {
+    "username": "$MYSQL_USER",
+    "password": "$MYSQL_PASSWORD",
+    "database": "$MYSQL_DATABASE",
+    "host": "$MYSQL_HOST",
     "dialect": "mysql"
   },
   "production": {
