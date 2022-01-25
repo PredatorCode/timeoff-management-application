@@ -14,17 +14,16 @@
 # 4. Login to running container (to update config (vi config/app.json): 
 #	docker exec -ti --user root alpine_timeoff /bin/sh
 # --------------------------------------------------------------------
-FROM node:15
+FROM node:14
 
 EXPOSE 3000
 
 WORKDIR /app
-
 RUN git clone https://github.com/PredatorCode/timeoff-management-application.git timeoff-management
 WORKDIR /app/timeoff-management
-#RUN git checkout tags/1.4.0
+RUN git checkout tags/1.4.0
 
-RUN npm install --save pg pg-hstore
+RUN npm install mysql && npm install
 RUN npm install
 
 CMD npm start
