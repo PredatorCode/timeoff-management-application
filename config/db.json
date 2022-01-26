@@ -12,10 +12,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "app_timeoff",
-    "password": "3h99v4kjQwrDXNVL",
-    "database": "timeoff",
-    "host": "tib-srv-stuff-pgdb.corp.tiburon-research.ru",
-    "dialect": "postgres"    
+    "username": "$POSTGRES_USER",
+    "password": "$POSTGRES_PASSWORD",
+    "database": "$POSTGRES_DATABASE",
+    "host": "$POSTGRES_HOST",
+    "dialect": "postgres"
   }
 }
