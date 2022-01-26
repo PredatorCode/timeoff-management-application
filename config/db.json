@@ -12,10 +12,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "$POSTGRES_USER",
+    "username": "POSTGRES_USER",
     "password": "$POSTGRES_PASSWORD",
-    "database": "$POSTGRES_DATABASE",
-    "host": "$POSTGRES_HOST",
+    "database": "POSTGRES_DB",
+    "host": "POSTGRES_HOST",
     "dialect": "postgres"
   }
 }
