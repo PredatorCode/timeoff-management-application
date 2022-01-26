@@ -15,7 +15,7 @@
     "username": "app_timeoff",
     "password": "3h99v4kjQwrDXNVL",
     "database": "timeoff",
-    "host": "192.168.183.41:5432",
+    "host": "192.168.183.41",
     "dialect": "postgres"
   }
 }
